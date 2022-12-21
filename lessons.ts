@@ -1,7 +1,7 @@
 export type Implementation = {
   framework: 'SvelteKit 1.0' | 'Nuxt 3' | 'Next 13' | 'Remix 1.9',
   githubUrl: string,
-  youtubeUrl: string,
+  youtubeId: string,
 }
 export type Lesson = {
   name: string,
@@ -18,7 +18,7 @@ export const lessons: Lesson[] = [
       {
         framework: 'SvelteKit 1.0',
         githubUrl: 'https://github.com/jeffreybiles/evil-commerce/commits/lesson-01',
-        youtubeUrl: '',
+        youtubeId: 'L6BE-U3oy80', // note: this is not actually the video for this lesson, this is a random video
       },
     ]
   },
