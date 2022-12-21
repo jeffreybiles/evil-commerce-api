@@ -15,11 +15,9 @@ export const lessons: Lesson[] = [
   {
     name: 'Lesson 01 - Intro to Components and Routing',
     exampleSubdomain: 'lesson-01',
-    description: `Learn the basics of components and routing.
-  
-    We'll start with displaying a list of products in the index route, and then we'll add a route that displays a single product.
-
-    We'll also learn how to abstract code into a reusable component with props.
+    description: `<p>Learn the basics of components and routing.</p>
+    <p>We'll start with displaying a list of products in the index route, and then we'll add a route that displays a single product.</p>
+    <p>We'll also learn how to abstract code into a reusable component with props.</p>
 `,
     implementations: [
       {
