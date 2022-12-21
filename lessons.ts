@@ -23,8 +23,13 @@ export const lessons: Lesson[] = [
     ]
   },
   {
-    name: 'Lesson 02 - Adding a Shopping Cart',
+    name: 'Lesson 02 - Loading and Server Files',
     exampleSubdomain: 'lesson-02',
     implementations: []
+  },
+  {
+    name: 'Lesson 03 - Layouts and More',
+    exampleSubdomain: 'lesson-03',
+    implementations: [],
   }
 ]

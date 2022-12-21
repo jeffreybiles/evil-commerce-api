@@ -8,6 +8,7 @@ import { lessons } from "./lessons.ts";
 const app = opine();
 
 app.get("/", (req, res) => {
+  // TODO - turn this into something that explains how to use the API
   res.send("Welcome to the Dinosaur API!");
 });
 app.get('/lessons', (req, res) => {
