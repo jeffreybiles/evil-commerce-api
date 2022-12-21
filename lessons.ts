@@ -18,8 +18,18 @@ export const lessons: Lesson[] = [
       {
         framework: 'SvelteKit 1.0',
         githubUrl: 'https://github.com/jeffreybiles/evil-commerce/commits/lesson-01',
-        youtubeId: 'L6BE-U3oy80', // note: this is not actually the video for this lesson, this is a random video
+        youtubeId: '_FJy4yUSmfc', // note: this is not actually the video for this lesson, this is a random video
       },
+      { // note: this is not actually created yet, but I'm leaving it here as a placeholder
+        framework: 'Nuxt 3',
+        githubUrl: '',
+        youtubeId: '0W16DJeAsFM',
+      },
+      { // note: this is not actually created yet, but I'm leaving it here as a placeholder
+        framework: 'Next 13',
+        githubUrl: '',
+        youtubeId: 'ypY-HuJP95k',
+      }
     ]
   },
   {
