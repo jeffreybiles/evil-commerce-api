@@ -8,12 +8,19 @@ export type Lesson = {
   exampleSubdomain: string,
   implementations: Implementation[],
   comingSoon?: boolean,
+  description?: string,
 }
 
 export const lessons: Lesson[] = [
   {
     name: 'Lesson 01 - Intro to Components and Routing',
     exampleSubdomain: 'lesson-01',
+    description: `Learn the basics of components and routing.
+  
+    We'll start with displaying a list of products in the index route, and then we'll add a route that displays a single product.
+
+    We'll also learn how to abstract code into a reusable component with props.
+`,
     implementations: [
       {
         framework: 'SvelteKit 1.0',
