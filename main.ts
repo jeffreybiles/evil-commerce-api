@@ -1,17 +1,19 @@
-import express from "npm:express@4.18.2";
+import { opine } from "https://deno.land/x/opine@2.3.3/mod.ts";
 import { lessons } from "./lessons.ts";
 
-const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Opine is Deno's Express-like framework
+// I tried to do Express through NPM, but Deno Deploy does not yet accept NPM modules
+// Once it does accept them, we can switch to Express
 
-app.get("/", (req: express.Request, res: express.Response) => {
+const app = opine();
+
+app.get("/", (req, res) => {
   res.send("Welcome to the Dinosaur API!");
 });
-app.get('/lessons', (req: express.Request, res: express.Response) => {
+app.get('/lessons', (req, res) => {
   res.json(lessons);
 });
-app.get('/lessons/:id', (req: express.Request, res: express.Response) => {
+app.get('/lessons/:id', (req, res) => {
   const lesson = lessons.find(lesson => lesson.exampleSubdomain === req.params.id);
   if (lesson) {
     res.json({
@@ -20,7 +22,8 @@ app.get('/lessons/:id', (req: express.Request, res: express.Response) => {
       nextLesson: lessons[lessons.indexOf(lesson) + 1],
     });
   } else {
-    res.status(404).send('Lesson not found');
+    res.status = 404
+    res.send('Lesson not found');
   }
 })
 
